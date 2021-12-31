@@ -1,0 +1,59 @@
+.DivFilhoUm {
+  width: 330px;
+  height: 175px;
+  left: 21px;
+  top: 183px;
+}
+.DivFilhoDois {
+  width: 360px;
+  height: 233px;
+  
+}
+.DivFilhoTres{
+    width: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.DivFilhoQuatro {
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  border: 1px solid #848484;
+  padding: 0.5em 1.5em;
+  margin-bottom: 0.5em;
+}
+.DivFilhoCinco {
+  width: 375px;
+  height: 62px;
+  left: 22px;
+  top: 787px;
+ display: grid;
+ grid-template-columns: 50% 50%;
+}
+.DivFilhoSeis {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+div.pagamento{
+  padding-top: 2em;
+}
+a{
+  color: #ff2351;
+  text-decoration-color: #ff2351;
+}
+p{
+  font-weight: bold;
+}
+@media (min-width: 700px) {
+  .FormDados{
+    border: 4px inset black;
+    border-radius: 30px;
+
+  }
+  .ContainerPai {
+    border: 2px inset black;
+    border-radius: 30px;
+    padding: 1em;
+  }
+}
