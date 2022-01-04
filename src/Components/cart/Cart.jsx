@@ -10,6 +10,7 @@ function Cart(props) {
       <h2 className={styles.titleCart}>Seu Pedido</h2>
       <div className={styles.itemCart}>
         {cartItems.length === 0 && <div>Cart is Empty</div>}
+        
         {cartItems.map((item) => {
           return (
             <section key={item.id} className={styles.rows}>
@@ -33,10 +34,11 @@ function Cart(props) {
                 <figure>
                   <div className={styles.image}></div>
                 </figure>
-                <div>{item.name}</div>
+                <div>{item.title}</div>
                 <div className={styles.colorYellow}>
-                  R${item.qty * item.price.toFixed(2)}
+                  R${item.qty * item.price}
                 </div>
+                {console.log(item.price)}
               </div>
               <p className={styles.line}></p>
             </section>
@@ -44,7 +46,7 @@ function Cart(props) {
         })}
       </div>
       {cartItems.length !== 0 && (
-        <div className={styles.totalCart}>Total: R$ {itemsPrice.toFixed(2)}</div>
+        <div className={styles.totalCart}>Total: R$ {itemsPrice}</div>
       )}
       {cartItems.length !== 0 && (
         <button className={styles.orderFinished}>Finalizar compra</button>

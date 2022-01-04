@@ -1,16 +1,27 @@
 import React from 'react';
-import Product from './Product';
+import Product from './Product/Product';
 
-export default function Main(props) {
-  const { products, onAdd } = props;
+function Main(props) {
+  const { items, onAdd } = props; 
+  let prato = [] 
+  items.map(item =>{
+    return item.map(prod=>{
+      return prato.push(prod)       
+    })
+  })
+
+//const [prato , setPrato] = useState([])
+ 
   return (
-    <main >
+    <main>
       <h2>Products</h2>
       <div>
-        {products.map((product) => (
-          <Product key={product.id} product={product} onAdd={onAdd}></Product>
-        ))}
+        {prato.map(item => {
+          return <Product key={item.id} items={item} onAdd={onAdd}></Product>
+        })}
       </div>
     </main>
   );
 }
+
+export default Main

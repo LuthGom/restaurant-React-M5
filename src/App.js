@@ -2,34 +2,19 @@ import React, { useState } from "react";
 import Cart from "./Components/cart/Cart";
 import menuData from "./assets/utils/MenuData";
 import Main from "./Components/Main";
-import data from "./data"
-// import Main from "./Components/Main";
+// import data from "./data"
+
 
 function App() {
-  // const contador = 0
-  // if (contador < menuData.length){
-  //   const prato = menuData[contador]
-  //   const pratofinal = prato.items;
-  //   for(let i=0; i <= pratofinal.length; i++){
-  //     pratofinal.map((item,index)=>{
-  //       console.log(item.title)
-  //     })
-  //   }
-  // }
-
- 
-  // menuData.forEach((element,index) => {
-  //   const { items } = element
-  //   items.map((prato,index)=>{
-
-    //Como vazer as informações para serem usadas no Main?????????
-
-  //     console.log(prato.title, prato.price, prato.img, index)
-  //   })
-  // });
-  const { products } = data;
-
+  let items = menuData.map(item =>{
+    return item.items.map(prod=>{
+      return prod
+    })
+  });
+  
+  console.log(items)
   const [cartItems, setCartItems] = useState([]);
+
   const onAdd = (item) => {
     const exist = cartItems.find((x) => x.id === item.id);
     if (exist) {
@@ -42,6 +27,7 @@ function App() {
       setCartItems([...cartItems,{...item,qty:1}])
     }
   };
+
   const onRemove = (item) => {
     const exist = cartItems.find((x) => x.id === item.id);
     if (exist.qty === 1) {
@@ -54,9 +40,10 @@ function App() {
       );
     }
   };
+
   return (
     <div className="App">
-      <Main products={products} onAdd={onAdd} /> 
+      <Main items={items} onAdd={onAdd} /> 
       <Cart cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />
     </div>
   );
