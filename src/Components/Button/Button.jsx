@@ -18,12 +18,13 @@ const Botao = styled.button`
   /* identical to box height */
 
   text-align: center;
-
+  cursor: pointer;
   color: #ffffff;
 `;
 
-function Button(props) {
-  return <Botao type="submit">{props.etiqueta}</Botao>;
+
+function Button({etiqueta}) {
+  return <Botao type="submit">{etiqueta}</Botao>;
 }
 
 export default Button;

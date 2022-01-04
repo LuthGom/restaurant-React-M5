@@ -1,0 +1,33 @@
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .DivForm {
+    margin: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .DivButton {
+    display: flex;
+    margin: 1em;
+  }
+  .DivButton Button {
+    margin-right: 0.5em;
+  }
+  @media (min-width: 700px) {
+    form {
+      border: 4px inset black;
+      border-radius: 30px;
+      width: fit-content;
+      margin: auto;
+    }
+    form span {
+      border: 2px inset black;
+      border-radius: 30px;
+    }
+  }
+  
