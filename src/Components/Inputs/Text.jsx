@@ -28,10 +28,8 @@ const Input = styled.input`
   }
 `;
 const Label = styled.label`
-  width: 238px;
+  width: 300px;
   height: 24px;
-  left: 54px;
-  top: 453px;
 
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -42,15 +40,18 @@ const Label = styled.label`
 
   color: black;
 `;
-function Text(props) {
+function Text({etiqueta,type, name, placeholder, value, handleOnChange, autocomplete}) {
   return (
     <>
-      <Label>{props.etiqueta}</Label>
+      <Label htmlFor={name}>{etiqueta}</Label>
       <Input
-        type="text"
-        name="Text"
-        id="Text"
-        placeholder={props.placeholder}
+        type={type}
+        name={name}
+        id={name}
+        placeholder={placeholder}
+        value={value}
+        onChange={handleOnChange}
+        autoComplete={autocomplete}
       />
     </>
   );
