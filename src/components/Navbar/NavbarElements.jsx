@@ -1,5 +1,5 @@
 import styled from "styled-components";
-//import { Link as LinkR } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export const Nav = styled.nav`
   grid-area: header;
@@ -28,6 +28,8 @@ export const NavbarContainer = styled.div`
 export const NavLogo = styled.img`
   cursor: pointer;
   margin-left: 24px;
+  height: 80px;
+  width: 80px;
 `;
 
 export const MobileIcon = styled.div`
@@ -65,7 +67,7 @@ export const NavItem = styled.li`
   height: 80px;
 `;
 
-export const NavLinks = styled.p`
+export const NavLinks = styled(Link)`
   color: black;
   display: flex;
   align-items: center;

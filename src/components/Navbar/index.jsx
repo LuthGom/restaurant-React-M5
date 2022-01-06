@@ -19,19 +19,21 @@ const Navbar = ({ toggle }) => {
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo src={Logo} />
+          <NavLinks to="/">
+            <NavLogo src={Logo} />
+          </NavLinks>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks>Cardápio</NavLinks>
+              <NavLinks to="/menu">Cardápio</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks>Sobre nós</NavLinks>
+              <NavLinks to="/aboutus">Sobre nós</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks>Contato</NavLinks>
+              <NavLinks to="/signin">Login</NavLinks>
             </NavItem>
             <CartWrapper>
               <FiShoppingCart />
