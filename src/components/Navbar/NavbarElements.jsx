@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const Nav = styled.nav`
   grid-area: header;
-  background: black;
+  background: #fdc844;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -25,23 +25,16 @@ export const NavbarContainer = styled.div`
   max-width: 1100px;
 `;
 
-export const NavLogo = styled.p`
-  color: #fff;
-  justify-self: flex-start;
-  align-items: center;
+export const NavLogo = styled.img`
   cursor: pointer;
-  font-size: 1.5rem;
-  display: flex;
   margin-left: 24px;
-  font-weight: bold;
-  text-decoration: none;
 `;
 
 export const MobileIcon = styled.div`
   display: none;
 
   @media screen and (max-width: 768px) {
-    color: #fff;
+    color: black;
     display: block;
     position: absolute;
     top: 0;
@@ -73,7 +66,7 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled.p`
-  color: #fff;
+  color: black;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -82,7 +75,7 @@ export const NavLinks = styled.p`
   cursor: pointer;
 
   &:hover {
-    color: #fdc844;
+    color: white;
   }
 `;
 
@@ -101,7 +94,7 @@ export const CartWrapper = styled.div`
   svg {
     height: 28px;
     width: 28px;
-    color: #fff;
+    color: black;
   }
 
   @media screen and (max-width: 768px) {
@@ -122,8 +115,8 @@ export const SpanCountCart = styled.span`
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background: #fdc844;
-  color: #fff;
+  background: #e5e5e5;
+  color: black;
   font-weight: 400;
   display: flex;
   justify-content: center;

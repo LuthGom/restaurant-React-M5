@@ -1,6 +1,7 @@
 import React from "react";
 import { FaBars } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
+import Logo from "./../../assets/images/logo.png";
 import {
   Nav,
   NavbarContainer,
@@ -18,7 +19,7 @@ const Navbar = ({ toggle }) => {
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo>Logo</NavLogo>
+          <NavLogo src={Logo} />
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
