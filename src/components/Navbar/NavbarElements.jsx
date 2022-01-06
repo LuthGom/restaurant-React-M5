@@ -3,16 +3,12 @@ import styled from "styled-components";
 
 export const Nav = styled.nav`
   grid-area: header;
-  background: ${({ scrollNav }) => (scrollNav ? "red" : "green")};
+  background: black;
   height: 80px;
-  margin-top: -80px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1rem;
-  position: sticky;
-  top: 0;
-  z-index: 10;
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
@@ -30,7 +26,7 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavLogo = styled.p`
-  color: black;
+  color: #fff;
   justify-self: flex-start;
   align-items: center;
   cursor: pointer;
@@ -45,7 +41,7 @@ export const MobileIcon = styled.div`
   display: none;
 
   @media screen and (max-width: 768px) {
-    color: red;
+    color: #fff;
     display: block;
     position: absolute;
     top: 0;
@@ -77,7 +73,7 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled.p`
-  color: black;
+  color: #fff;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -86,6 +82,56 @@ export const NavLinks = styled.p`
   cursor: pointer;
 
   &:hover {
-    color: #ff2315;
+    color: #fdc844;
+  }
+`;
+
+export const CartWrapper = styled.div`
+  position: relative;
+  background: #ff2351;
+  width: 50px;
+  height: 50px;
+  margin-left: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  svg {
+    height: 28px;
+    width: 28px;
+    color: #fff;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin: 7px;
+    width: 50px;
+    height: 50px;
+
+    svg {
+      height: 22px;
+      width: 22px;
+    }
+  }
+`;
+
+export const SpanCountCart = styled.span`
+  position: absolute;
+  inset: 22px 0 0 26px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #fdc844;
+  color: #fff;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 768px) {
+    width: 20px;
+    height: 20px;
+    inset: 24px 0 0 26px;
   }
 `;

@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { HomeContainer } from "./../../assets/styles/globalStyles"
+import { HomeContainer } from "./../../assets/styles/globalStyles";
 import Sidebar from "./../Sidebar";
 import Navbar from "./../Navbar";
 import CategoryMenu from "./../CategoryMenu";
 import Menu from "./../Menu";
-import Cart from "./../Cart/Cart"
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +20,6 @@ const Home = () => {
         <Navbar toggle={toggle} />
         <CategoryMenu active={active} setActive={setActive} />
         <Menu active={active} setActive={setActive} />
-        <Cart/>
       </HomeContainer>
     </>
   );

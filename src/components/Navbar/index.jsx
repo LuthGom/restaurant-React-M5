@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { FaBars } from "react-icons/fa";
+import { FiShoppingCart } from "react-icons/fi";
 import {
   Nav,
   NavbarContainer,
@@ -8,28 +9,16 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
+  CartWrapper,
+  SpanCountCart,
 } from "./NavbarElements";
 
 const Navbar = ({ toggle }) => {
-  const [scrollNav, setScrollNav] = useState(false);
-
-  const changeNav = () => {
-    if (window.scrollY >= 80) {
-      setScrollNav(true);
-    } else {
-      setScrollNav(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", changeNav);
-  }, []);
-
   return (
     <>
-      <Nav scrollNav={scrollNav}>
+      <Nav>
         <NavbarContainer>
-          <NavLogo>Restaurante</NavLogo>
+          <NavLogo>Logo</NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
@@ -38,14 +27,15 @@ const Navbar = ({ toggle }) => {
               <NavLinks>Cardápio</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks>Franquias</NavLinks>
-            </NavItem>
-            <NavItem>
               <NavLinks>Sobre nós</NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks>Contato</NavLinks>
             </NavItem>
+            <CartWrapper>
+              <FiShoppingCart />
+              <SpanCountCart></SpanCountCart>
+            </CartWrapper>
           </NavMenu>
         </NavbarContainer>
       </Nav>

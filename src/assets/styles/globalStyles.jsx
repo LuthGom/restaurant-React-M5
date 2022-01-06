@@ -6,9 +6,9 @@ export const HomeContainer = styled.div`
   -moz-osx-font-smoothing: grayscale;
   display: grid;
   grid-template-areas:
-    "header header"
-    "sideMenu menu"
-    "footer footer";
+    "header header header"
+    "sideMenu menu cart"
+    "footer footer footer";
   grid-template-columns: 130px auto;
   grid-template-rows: 80px auto auto;
 

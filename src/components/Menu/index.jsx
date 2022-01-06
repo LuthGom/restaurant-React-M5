@@ -24,7 +24,7 @@ const Menu = ({ active, id, title, description, price }) => {
               <MenuDescription description={description}>
                 {item.description}
               </MenuDescription>
-              <MenuPrice price={price}>{item.price}</MenuPrice>
+              <MenuPrice price={price}>R$ {item.price}</MenuPrice>
             </DescriptionWrapper>
           </MenuCard>
         ))}
