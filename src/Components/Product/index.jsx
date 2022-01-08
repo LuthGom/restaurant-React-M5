@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
 function Product(props) {
   const { items, onAdd } = props;
-  console.log(items.title)
+  
   return (
     <div>
       <h3>{items.title}</h3>

@@ -16,6 +16,7 @@ ReactDOM.render(
   document.getElementById('root')
 );
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
@@ -23,3 +24,5 @@ ReactDOM.render(
 // reportWebVitals();
 =======
 >>>>>>> Larissa
+=======
+>>>>>>> b80bace9aa7ee9fbe52bb90d9493f390b3004f9a
