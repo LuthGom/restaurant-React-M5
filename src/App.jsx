@@ -1,5 +1,5 @@
 import './App.css';
-import Routes from "./../src/components/pages/Routes"
+import Routes from "./Components/pages/Routes"
 
 function App() {
   return (
@@ -9,13 +9,4 @@ function App() {
   );
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 export default App;
-=======
-export default App;
->>>>>>> Larissa
-=======
-export default App;
-
->>>>>>> b80bace9aa7ee9fbe52bb90d9493f390b3004f9a

@@ -8,6 +8,10 @@ export const CartContainer = styled.aside`
     padding: 40px 20px 0 20px;    
     height: 100vh;
     min-width: 500px;
+
+    @media screen and (max-width: 960px) {
+        display: none;
+      }
 `;
 
 export const TitleCart = styled.h1`
@@ -20,13 +24,13 @@ export const ItemCart = styled.div`
 
 export const RowsOrder = styled.section`
     display: grid;
-    grid-template-rows: 3fr 1fr;
+    grid-template-rows: 3fr 1fr 1fr;
     margin-top: 10px;
 `;
 
 export const Order = styled.div`
     display: grid;
-    grid-template-columns: 0.5fr 1fr 2fr 1fr;
+    grid-template-columns: 0.5fr 1fr 2fr 1fr 0.5fr;
     justify-items: start;
     align-items: center;
     margin-bottom: 8px;
@@ -62,18 +66,22 @@ export const Img = styled.img`
     max-height: 81x;
     max-width: 66px;
     border-radius: 8px;
-
 `;
+
+export const Info = styled.a`
+    color: rgba(132, 132, 132, 1);
+    font-size: 12px
+`
 
 export const QtyPrice = styled.div`
     color: #FDC844;
 `;
 
-export const Line = styled.div`
-    background-color: #DADADA;
-    height:1px;
+export const Icons = styled.div`
+    display: flex;
+    flex-direction: row;
 
-`;
+`
 
 export const TotalCart = styled.div`
     display: flex;
@@ -95,4 +103,12 @@ export const OrderFinished = styled.button`
     font-style: normal;
     font-size: 18px;
     margin: 10px auto;
+`;
+
+
+
+export const Line = styled.div`
+    background-color: #DADADA;
+    height:1px;
+
 `;

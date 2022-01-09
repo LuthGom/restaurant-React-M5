@@ -10,14 +10,14 @@ import {
   MenuPrice,
 } from "./MenuElements";
 
-const Menu = ({ active, id, title, description, price }) => {
+const Menu = ({ active, id, title, description, price, onAdd}) => {
   const i = active;
 
   return (
     <>
       <MenuContainer>
         {menuData[i].items.map((item, index) => (
-          <MenuCard id={id} key={index}>
+            <MenuCard id={id} key={index} onClick={() => onAdd(item)}>
             <Img src={`${item.img}`} alt={`${item.alt}`} />
             <DescriptionWrapper>
               <MenuTitle title={title}>{item.title}</MenuTitle>
