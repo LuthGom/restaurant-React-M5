@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const CartContainer = styled.aside`
-    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-style: normal;
     background-color: #ffffff;
@@ -55,7 +54,6 @@ export const ButtonQty = styled.span`
     border: none;
     outline: none;
     font-size: 18px;
-    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-style: normal;
     background-color: #ffffff;
@@ -105,6 +103,10 @@ export const OrderFinished = styled.button`
     margin: 10px auto;
 `;
 
+export const Obs = styled.p`
+      font-size:12px;
+      color: #808080
+`
 
 
 export const Line = styled.div`

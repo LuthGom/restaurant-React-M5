@@ -1,27 +1,43 @@
 import React from "react";
-import ReactDOM from 'react-dom';
+import { Container, Modal, Head, Content, ObsField, Botao } from "./ModalElements";
+import { FaMinus, FaPlus, FaRegWindowClose } from "react-icons/fa";
+import { ButtonQty, QtyOrder, Img, QtyPrice } from "../Cart/CartElements";
 
-const portalRoot = document.getElementById('portal-modal')
+function CartModal({ onClose = () => {}, children, onAdd, onRemove, comment, setComment }) {
+  return (
+    <Modal>
+      <Container>
+        <Head>
+          <h1>{children.title}</h1>
+          <FaRegWindowClose onClick={onClose} />
+        </Head>
 
-function CartModal(children) {
-  // const { cartItem } = props;
-  // const [ observacao, setObservacao] = useState("")
-  
-  return ReactDOM.createPortal (
-        <>
-        <div>
-          <h1>Voltar</h1>
-          <button type="button">X</button>
-          <div>
-            {children}
+        <Content className="content">
+          <Img src={`${children.img}`} alt={`${children.alt}`} />
+          <div>{children.title}</div>
+          <QtyOrder>
+            <ButtonQty onClick={() => onAdd(children)}>
+              <FaPlus />
+            </ButtonQty>
+            {children.qty}
+            <ButtonQty onClick={() => onRemove(children)}>
+              <FaMinus />
+            </ButtonQty>
+          </QtyOrder>
+          <label htmlFor="">Observação:</label>
+          <ObsField
+            placeholder="Ex: tirar salada, bebida sem gelo..."
+            onChange={(ev) => setComment(ev.target.value)}
+            value={comment}
+          />
+          <QtyPrice>R${children.qty * children.price.toFixed(2)} </QtyPrice>
+        </Content>
 
-          </div>
-        </div>
-        </>,
-        portalRoot
-      );
-  
-  
+        <Botao onClick={onClose}>Salvar Alteração</Botao>
+
+      </Container>
+    </Modal>
+  );
 }
 
 export default CartModal;
