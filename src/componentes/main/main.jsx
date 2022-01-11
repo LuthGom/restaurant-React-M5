@@ -1,6 +1,7 @@
 import React,{useState} from "react"
 import main from "./main.css"
-import savings from '../../img/logo.jpg'
+import savings from '../../img/logoo.png'
+
 
 function Main (){
 return(
