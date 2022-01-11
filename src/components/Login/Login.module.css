@@ -1,0 +1,33 @@
+.section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+span {
+    border: 4px inset black;
+    border-radius: 30px;
+    width: fit-content;
+    margin: auto;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+form {
+    height: 95%;
+    border: 2px inset black;
+    border-radius: 30px;
+    padding-bottom: 1em;
+    background-color: white;
+}
+.senha{
+    padding-bottom: 1em;
+}
+.button{
+   width: 50%;
+}
+@media  (min-width: 500px) {
+    .span{
+        padding: 2em;
+    }
+}

@@ -17,8 +17,8 @@ const P = styled.p`
 
 
 
-function Paragrafo(props) {
-  return <P>{props.paragrafo}</P>;
+function Paragrafo({paragrafo}) {
+  return <P>{paragrafo}</P>;
 }
 
 export default Paragrafo

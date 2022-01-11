@@ -5,7 +5,7 @@ import CadastroForm from "./CadastroForm";
 import styles from "./Cadastro.module.css";
 function Cadastro() {
   function createPost(cadastro) {
-    fetch("https://restaurant-client-api.herokuapp.com/clientes", {
+    fetch("https://localhost:3003/cliente", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
