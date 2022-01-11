@@ -4,7 +4,7 @@ import {
   Order,
   ButtonQty,
   QtyOrder,
-  Img,  
+  Img,
   QtyPrice,
   Icons,
   Line,
@@ -35,9 +35,7 @@ function Product(props) {
 
         <div>
           <div>{item.title}</div>
-          {comment.length !== 0 && (
-          <Obs>{comment}</Obs>)}
-
+          {comment.length !== 0 && <Obs>{comment}</Obs>}
         </div>
 
         <QtyPrice>R${item.qty * item.price.toFixed(2)} </QtyPrice>
@@ -55,7 +53,6 @@ function Product(props) {
             ></CartModal>
           ) : null}
         </Icons>
-
       </Order>
 
       <Line />

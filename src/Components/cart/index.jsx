@@ -3,14 +3,15 @@ import { CartContainer, TitleCart, ItemCart, TotalCart } from "./CartElements";
 import Button from "../layout/Button";
 import Product from "../Product";
 
-function Cart(props) {
-  const { cartItems, onAdd, onRemove, comment, setComment } = props;
+function Cart({ cartItems, onAdd, onRemove }) {
+
   
   //calculo para o valor total do carrinho
   const itemsPrice = cartItems.reduce(
     (acc, cur) => acc + cur.price * cur.qty,
     0
   );
+  
 
   return (
     <CartContainer>
@@ -24,8 +25,7 @@ function Cart(props) {
               item={item}
               onAdd={onAdd}
               onRemove={onRemove}
-              comment={comment}
-              setComment={setComment}
+             
             ></Product>
           );
         })}
@@ -37,7 +37,6 @@ function Cart(props) {
         <Button to="/signin" textBtn="Finalizar compra" />
       )}
 
-      {/* <CartModal isOpen></CartModal> */}
     </CartContainer>
   );
 }

@@ -3,8 +3,9 @@ import CategoryMenu from "../CategoryMenu";
 import Menu from "../Menu";
 import Cart from "../Cart";
 
-const HomeMenu = ({ cartItems, setCartItems, comment, setComment }) => {
+const HomeMenu = ({ cartItems, setCartItems }) => {
   const [active, setActive] = useState(0);
+  
 
   const onAdd = (item) => {
     const exist = cartItems.find((x) => x.id === item.id);
@@ -30,13 +31,13 @@ const HomeMenu = ({ cartItems, setCartItems, comment, setComment }) => {
       );
     }
   };
-
+  
   return (
     <>
       <CategoryMenu active={active} setActive={setActive} />
       <Menu active={active} setActive={setActive} onAdd={onAdd} />
       {cartItems.length !== 0 && (
-        <Cart cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} comment={comment} />
+        <Cart cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />
       )}
       
     </>

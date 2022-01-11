@@ -1,9 +1,23 @@
 import React from "react";
-import { Container, Modal, Head, Content, ObsField, Botao } from "./ModalElements";
+import {
+  Container,
+  Modal,
+  Head,
+  Content,
+  ObsField,
+  Botao,
+} from "./ModalElements";
 import { FaMinus, FaPlus, FaRegWindowClose } from "react-icons/fa";
-import { ButtonQty, QtyOrder, Img, QtyPrice } from "../Cart/CartElements";
+import { ButtonQty, QtyOrder, Img, QtyPrice, Obs } from "../Cart/CartElements";
 
-function CartModal({ onClose = () => {}, children, onAdd, onRemove, comment, setComment }) {
+function CartModal({
+  onClose = () => {},
+  children,
+  onAdd,
+  onRemove,
+  comment,
+  setComment,
+}) {
   return (
     <Modal>
       <Container>
@@ -12,9 +26,10 @@ function CartModal({ onClose = () => {}, children, onAdd, onRemove, comment, set
           <FaRegWindowClose onClick={onClose} />
         </Head>
 
-        <Content className="content">
+        <Content>
           <Img src={`${children.img}`} alt={`${children.alt}`} />
           <div>{children.title}</div>
+          <Obs>{children.description}</Obs>
           <QtyOrder>
             <ButtonQty onClick={() => onAdd(children)}>
               <FaPlus />
@@ -34,7 +49,6 @@ function CartModal({ onClose = () => {}, children, onAdd, onRemove, comment, set
         </Content>
 
         <Botao onClick={onClose}>Salvar Alteração</Botao>
-
       </Container>
     </Modal>
   );
