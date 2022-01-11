@@ -1,4 +1,4 @@
-import Routes from "./components/pages/Routes"
+import Routes from "./Components/pages/Routes"
 import GlobalStyles from "./assets/styles/globalStyles";
 
 function App() {

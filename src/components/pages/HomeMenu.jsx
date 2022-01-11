@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import CategoryMenu from "../CategoryMenu";
 import Menu from "../Menu";
-import Cart from "../Cart";
+import Cart from "./../cart";
 
 const HomeMenu = ({ cartItems, setCartItems }) => {
   const [active, setActive] = useState(0);

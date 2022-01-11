@@ -9,9 +9,9 @@ import {
   Icons,
   Line,
   Obs,
-} from "../Cart/CartElements";
+} from "./../cart/CartElements";
 import { FaMinus, FaPlus, FaEdit } from "react-icons/fa";
-import CartModal from "../CartModal";
+import CartModal from "./../CartModal";
 
 function Product(props) {
   const { item, onAdd, onRemove } = props;

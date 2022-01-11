@@ -1,9 +1,10 @@
 import React from "react";
+import Loading from "./../Loading"
 
 const Main = () => {
   return (
     <>
-      <div>Componente Main - Luana fazendo :)</div>
+      <Loading/>
     </>
   );
 };

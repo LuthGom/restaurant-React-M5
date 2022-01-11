@@ -8,7 +8,7 @@ import {
   Botao,
 } from "./ModalElements";
 import { FaMinus, FaPlus, FaRegWindowClose } from "react-icons/fa";
-import { ButtonQty, QtyOrder, Img, QtyPrice, Obs } from "../Cart/CartElements";
+import { ButtonQty, QtyOrder, Img, QtyPrice, Obs } from "../cart/CartElements";
 
 function CartModal({
   onClose = () => {},
