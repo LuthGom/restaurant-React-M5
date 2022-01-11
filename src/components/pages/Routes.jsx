@@ -12,20 +12,20 @@ import Error from "./../Error";
 
 const Rotas = () => {
   const [isOpen, setIsOpen] = useState(false);
-
+  const [cartItems, setCartItems] = useState([]);
   const toggle = () => {
     setIsOpen(!isOpen);
   };
-
+ 
   return (
     <>
       <Router>
         <HomeContainer>
           <Sidebar isOpen={isOpen} toggle={toggle} />
-          <Navbar toggle={toggle} />
+          <Navbar toggle={toggle} countCartItems={cartItems.length} />
           <Routes>
             <Route path="/" element={<Main />} />
-            <Route path="/menu" element={<HomeMenu />} />
+            <Route path="/menu" element={<HomeMenu cartItems={cartItems} setCartItems={setCartItems} />} />
             <Route path="/aboutus" element={<AboutUs />} />
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/signin" element={<Signup />} />

@@ -14,7 +14,8 @@ import {
   SpanCountCart,
 } from "./NavbarElements";
 
-const Navbar = ({ toggle }) => {
+const Navbar = ({ toggle, countCartItems}) => {
+
   return (
     <>
       <Nav>
@@ -37,7 +38,7 @@ const Navbar = ({ toggle }) => {
             </NavItem>
             <CartWrapper>
               <FiShoppingCart />
-              <SpanCountCart></SpanCountCart>
+              <SpanCountCart>{countCartItems}</SpanCountCart>
             </CartWrapper>
           </NavMenu>
         </NavbarContainer>

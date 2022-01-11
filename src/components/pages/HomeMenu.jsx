@@ -3,12 +3,12 @@ import CategoryMenu from "../CategoryMenu";
 import Menu from "../Menu";
 import Cart from "../Cart";
 
-const HomeMenu = () => {
+
+const HomeMenu = ({cartItems, setCartItems}) => {
   const [active, setActive] = useState(0);
-  const [cartItems, setCartItems] = useState([]);
+
   
-  const onAdd = (item) => {
-    console.log("entrou")
+  const onAdd = (item) => {    
     const exist = cartItems.find((x) => x.id === item.id);
     if (exist) {
       setCartItems(
@@ -32,7 +32,7 @@ const HomeMenu = () => {
       );
     }
   };
-
+  console.log(cartItems.length)
   return (
     <>
       <CategoryMenu active={active} setActive={setActive} />
@@ -40,6 +40,7 @@ const HomeMenu = () => {
       {cartItems.length !== 0 && (
         <Cart cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />    
       )}
+      <div id="portal-modal"></div>
     </>
   );
 };
