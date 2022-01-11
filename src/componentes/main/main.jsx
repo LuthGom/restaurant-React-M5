@@ -1,20 +1,24 @@
 import React,{useState} from "react"
 import main from "./main.css"
+import savings from '../../img/logo.jpg'
 
 function Main (){
-const[contador,setContador]=useState(0)    
-function clica (){
-setContador((contador)=>{
-    return contador +1
-})
-}
 return(
     <main>
-        <section className="principal">
-         Luana
+        <section className="main_container">
+        <div className="sidebar">
+        <h1>Bem-vindo ao <span>Tasty Food</span>
+        </h1>
+        <p>O que você precisa está aqui. <br/> Faça o seu pedido que entregamos em minutos onde você estiver!</p>
+        
+        <button className="botao" onClick>Fazer pedido</button>
+         </div>
+
+         <div className="content" ><img src={savings} alt="Food"/></div>
+         
         </section>
-        <h1>{contador}</h1>
-        <button onClick={clica}>Faça seu pedido!</button>
+         
+        
         </main>
 )
 }
