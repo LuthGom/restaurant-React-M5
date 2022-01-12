@@ -18,7 +18,7 @@ const Login = () => {
     try {
       await auth.authenticate(login.email, login.senha);
 
-      navigate.push("/profile");
+      navigate("/dados", {replace: true});
     } catch (error) {
       throw new Error("Invalid email or senha");
     }
@@ -49,8 +49,8 @@ const Login = () => {
               handleOnChange={handleChange}
             />
           </div>
-          <div>
-            <Button type="primary" htmlType="submit" etiqueta="Login" className={styles.button} />
+          <div className={styles.divButton}>
+            <Button type="primary" htmlType="submit" etiqueta="Login" />
           </div>
         </form>
       </span>

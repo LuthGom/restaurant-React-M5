@@ -24,8 +24,6 @@ const Label = styled.label`
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  /* identical to box height */
-
 
   color: #848484
 `;
@@ -34,12 +32,12 @@ const Div = styled.div`
   display: flex;
 `;
 
-function Radio(props) {
+function Radio({placeholder, checked, etiqueta, name}) {
   return (
     <Div>
-      <Input type="radio" name="Radio" placeholder={props.placeholder} />
+      <Input type="radio" name={name} placeholder={placeholder} checked={checked} id={name}/>
 
-      <Label>{props.etiqueta}</Label>
+      <Label htmlFor={name}>{etiqueta}</Label>
     </Div>
   );
 }

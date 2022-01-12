@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Botao = styled.button`
-  width: 348px;
+  width: fit-content;
   height: 46px;
   left: 14px;
   top: 907px;

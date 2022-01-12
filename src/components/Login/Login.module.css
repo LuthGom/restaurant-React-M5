@@ -12,19 +12,23 @@ span {
     display: flex;
     align-items: center;
     background-color: black;
+    padding: .5em;
 }
 form {
     height: 95%;
     border: 2px inset black;
     border-radius: 30px;
-    padding-bottom: 1em;
+    padding: 0 0.5em 1em 0.5em;
     background-color: white;
 }
 .senha{
     padding-bottom: 1em;
 }
-.button{
-   width: 50%;
+.divButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
 }
 @media  (min-width: 500px) {
     .span{
