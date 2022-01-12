@@ -68,17 +68,24 @@ h1, p, img{
 img {
     float: right;
     margin: 0 0 10px 10px;
-    margin-right: 8%;
+    margin-right: 15%;
+    
 
 
     
 
 }
+
+h1{
+    margin-left: 30%;
+    margin-top: 8%;
+}
+
 .main_container h1 span {
     color:#ff2351;
     padding: 0 0.2em;
     background-color: #fdc844;
-    
+    margin-left: 1%;
 }
 
 .main_container p{
@@ -86,7 +93,7 @@ img {
     color: #000;
     float: left;
     margin-top: 8%;
-    
+    margin-left: 20%;
     
 
 }
@@ -100,7 +107,7 @@ img {
 .botao{
     margin: 30%;
     float: left;
-    margin-left: 20%;
+    margin-left: 50%;
     
 }
 
