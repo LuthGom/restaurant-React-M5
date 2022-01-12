@@ -9,6 +9,7 @@ import AboutUs from "./AboutUs";
 import Checkout from "./Checkout";
 import Signup from "./Signup";
 import Error from "./../Error";
+import Footer from "./../Footer"
 
 const Rotas = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,7 +31,8 @@ const Rotas = () => {
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/signin" element={<Signup />} />
             <Route path="*" element={<Error />} />
-          </Routes> 
+          </Routes>
+          <Footer/> 
         </HomeContainer>
       </Router>
     </>
