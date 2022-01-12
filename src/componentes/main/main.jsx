@@ -1,6 +1,7 @@
 import React,{useState} from "react";
 import main from "./main.css";
 import savings from '../../img/logoo.png';
+import Button from "../layout/Button";
 
 function Main (){
 return(
