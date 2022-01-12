@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import CategoryMenu from "../CategoryMenu";
 import Menu from "../Menu";
-import Cart from "./../cart";
+import Cart from "../cart"
 
 const HomeMenu = ({ cartItems, setCartItems }) => {
-  const [active, setActive] = useState(0);
-  
+  const [active, setActive] = useState(0);  
 
   const onAdd = (item) => {
     const exist = cartItems.find((x) => x.id === item.id);

@@ -34,10 +34,11 @@ export const HomeContainer = styled.div`
     grid-template-areas:
       "header"
       "sideMenu"
+      "cart"
       "menu"
       "footer";
     grid-template-columns: auto;
-    grid-template-rows: 80px auto auto auto;
+    grid-template-rows: 80px auto auto auto auto;
   }
 
   @media screen and (max-width: 480px) {

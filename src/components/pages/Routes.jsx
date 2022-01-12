@@ -16,7 +16,7 @@ const Rotas = () => {
   const toggle = () => {
     setIsOpen(!isOpen);
   };
- 
+  console.log(cartItems)
   return (
     <>
       <Router>
@@ -30,7 +30,7 @@ const Rotas = () => {
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/signin" element={<Signup />} />
             <Route path="*" element={<Error />} />
-          </Routes>
+          </Routes> 
         </HomeContainer>
       </Router>
     </>

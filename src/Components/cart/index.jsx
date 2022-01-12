@@ -4,14 +4,11 @@ import Button from "../layout/Button";
 import Product from "../Product";
 
 function Cart({ cartItems, onAdd, onRemove }) {
-
-  
   //calculo para o valor total do carrinho
   const itemsPrice = cartItems.reduce(
     (acc, cur) => acc + cur.price * cur.qty,
     0
   );
-  
 
   return (
     <CartContainer>
@@ -25,7 +22,6 @@ function Cart({ cartItems, onAdd, onRemove }) {
               item={item}
               onAdd={onAdd}
               onRemove={onRemove}
-             
             ></Product>
           );
         })}
@@ -36,7 +32,6 @@ function Cart({ cartItems, onAdd, onRemove }) {
       {cartItems.length !== 0 && (
         <Button to="/signin" textBtn="Finalizar compra" />
       )}
-
     </CartContainer>
   );
 }
