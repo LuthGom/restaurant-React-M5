@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "name": "restaurante",
   "version": "0.1.0",
   "private": true,
@@ -13,11 +12,11 @@
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
     "styled-components": "^5.3.3",
-    "web-vitals": "^2.1.2"
-=======
+    "web-vitals": "^2.1.2",
+
   "name": "restaurant-react-m5",
   "version": "0.1.0",
-  "private": true,
+  "private": "true",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
@@ -28,7 +27,6 @@
     "react-scripts": "5.0.0",
     "styled-components": "^5.3.3",
     "web-vitals": "^2.1.0"
->>>>>>> 84158fa (Criação da seção de dados do usuário: responsivo)
   },
   "scripts": {
     "start": "react-scripts start",
@@ -47,7 +45,8 @@
       ">0.2%",
       "not dead",
       "not op_mini all"
-    ],
+    ]
+  },
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
