@@ -2,7 +2,6 @@ import React from "react";
 // import {useNavigate} from "react-router-dom";
 
 import CadastroForm from "./CadastroForm";
-import styles from "./Cadastro.module.css";
 function Cadastro() {
   function createPost(cadastro) {
     fetch("https://restaurant-client-api.herokuapp.com/clientes", {
