@@ -37,7 +37,7 @@ const Rotas = () => {
             <Route path="/deliverywaiting" element={<Entrega />} />
             <Route path="/login" element={<Login />} />
             <Route path="register" element={<Register />} />
-            <Route path="profile" element={<Profile />} />
+            <Route path="/profile" element={<Profile />} />
           </Routes>
           <Footer />
         </HomeContainer>
