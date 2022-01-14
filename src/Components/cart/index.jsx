@@ -30,7 +30,7 @@ function Cart({ cartItems, onAdd, onRemove }) {
         <TotalCart>Total: R$ {itemsPrice.toFixed(2)}</TotalCart>
       )}
       {cartItems.length !== 0 && (
-        <Button to="/signin" textBtn="Finalizar compra" />
+        <Button to="/login" textBtn="Finalizar compra" />
       )}
     </CartContainer>
   );

@@ -19,9 +19,8 @@ function Cadastro() {
         .then((resp) => resp.json())
         .then((data) => {
           console.log(data);
-          localStorage("Client", JSON.stringify(data.requisicao))
+          localStorage.setItem("cpf", data.requisicao.cpf)
           navigate("/profile", { replace: true });
-          // setRemoveLoading(true)
         })
         .catch((err) => console.log(err));
     }, 1000);
