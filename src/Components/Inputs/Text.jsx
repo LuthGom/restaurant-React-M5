@@ -40,7 +40,7 @@ const Label = styled.label`
 
   color: black;
 `;
-function Text({etiqueta,type, name, placeholder, value, handleOnChange, autocomplete}) {
+function Text({disabled,contentEditable,etiqueta,type, name, placeholder, value, handleOnChange, autocomplete}) {
   return (
     <>
       <Label htmlFor={name}>{etiqueta}</Label>
@@ -52,6 +52,8 @@ function Text({etiqueta,type, name, placeholder, value, handleOnChange, autocomp
         value={value}
         onChange={handleOnChange}
         autoComplete={autocomplete}
+        contentEditable={contentEditable}
+        disabled={disabled}
       />
     </>
   );

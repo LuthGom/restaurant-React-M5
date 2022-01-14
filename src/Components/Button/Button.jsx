@@ -23,8 +23,8 @@ const Botao = styled.button`
 `;
 
 
-function Button({etiqueta}) {
-  return <Botao type="submit">{etiqueta}</Botao>;
+function Button({etiqueta, onClick}) {
+  return <Botao onClick={onClick} type="submit">{etiqueta}</Botao>;
 }
 
 export default Button;

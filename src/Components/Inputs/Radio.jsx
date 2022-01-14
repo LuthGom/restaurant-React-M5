@@ -4,8 +4,8 @@ import styled from "styled-components";
 const Input = styled.input`
   width: 20px;
   height: 20px;
-  left: 22px;
-  top: 455px;
+  margin-top: .5em;
+
 
   background: #ffffff;
   border: 1px solid #dadada;
@@ -34,13 +34,13 @@ const Div = styled.div`
   display: flex;
 `;
 
-function Radio(props) {
+function Radio({etiqueta, checked, name, value, onChange}) {
   return (
-    <Div>
-      <Input type="radio" name="Radio" placeholder={props.placeholder} />
+    <div>
+      <Input type="radio" name={name} value={value} defaultChecked={checked} onChange={onChange}/>
 
-      <Label>{props.etiqueta}</Label>
-    </Div>
+      <Label>{etiqueta}</Label>
+    </div>
   );
 }
 

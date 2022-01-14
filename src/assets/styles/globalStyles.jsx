@@ -27,7 +27,7 @@ export const HomeContainer = styled.div`
     "header header header"
     "sideMenu menu cart"
     "footer footer footer";
-  grid-template-columns: 130px auto 600px;
+  grid-template-columns: auto auto auto;
   grid-template-rows: 80px auto auto;
 
   @media screen and (max-width: 768px) {

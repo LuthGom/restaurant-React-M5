@@ -31,10 +31,7 @@ const Navbar = ({ toggle, countCartItems}) => {
               <NavLinks to="/menu">Cardápio</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="/aboutus">Sobre nós</NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks to="/signin">Login</NavLinks>
+              <NavLinks to="/login">Login</NavLinks>
             </NavItem>
             <CartWrapper>
               <FiShoppingCart />
