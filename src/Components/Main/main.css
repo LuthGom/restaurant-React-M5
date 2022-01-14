@@ -1,0 +1,132 @@
+/* .main_container{
+    width: 100%;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    padding: 4em;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    background-color:#E5E5E5 ;
+}
+h1, p, img{
+    display:inline-block;
+}
+.main_container h1 span {
+    color:blueviolet;
+    padding: 0 0.2em;
+    background-color: #fdc844;
+    
+}
+
+.main_container p{
+    margin-bottom: 1.5em;
+    color: #000;
+    float: left;
+    margin-top: 5%;
+    
+    
+
+}
+
+.sidebar{
+
+    align-items: center;
+
+}
+.botao{
+    margin: 10%;
+}
+
+.main_container img{
+    width: 539px;
+    height: 539px;
+    margin: 0 0 10px 10px;
+    float: right;
+    right:100px;
+    justify-content: right;
+    display: block;
+    
+
+}  */
+
+/* template area */
+
+/* .main_container{
+    grid-area: menu;
+    width: 100%;
+    background-color:#E5E5E5 ;
+    padding: 15px;
+    display: flex;
+     */
+    /*display: grid;
+    grid-template-rows: 1fr ;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}*/
+ 
+.main_container{
+    width: 100vw;    
+    background-color: #E5E5E5;
+    padding: 15px;
+    display: grid;
+    gap: 5px;
+    grid-template-areas: 
+    'sidebar content content';
+    }
+
+img {
+    
+    margin: 0 0 10px 10px;
+    margin-right: 5%;
+    right: 20%;
+    float:right;
+    
+    
+
+
+    
+
+}
+
+h1{
+    margin-left: 5%;
+    margin-top: 1%;
+}
+
+.main_container h1 span {
+    color:#ff2351;
+    padding: 0 0.1em;
+    background-color: #fdc844;
+    margin-left: 1%;
+}
+
+.main_container p{
+    margin-bottom: 1.5em;
+    color: #000;
+    margin-top: 8%;
+    margin-left: 20%;
+    
+
+}
+
+.sidebar{
+    display: grid;
+    align-content: space-evenly;
+    justify-content: center;
+    justify-items: center;
+
+}
+/*.main_container{
+    width: 100vw;
+    font-family: 'Poppins';
+    background-color:#E5E5E5 ;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+ 
+} */
+ 
+
+
+

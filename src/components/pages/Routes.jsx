@@ -5,6 +5,7 @@ import Sidebar from "./../Sidebar";
 import Navbar from "./../Navbar";
 import HomeMenu from "./HomeMenu";
 import Checkout from "./Checkout";
+import Main from "./Main";
 import Login from "./Login";
 import Error from "./../Error";
 import Footer from "./../Footer";
@@ -24,7 +25,7 @@ const Rotas = () => {
           <Sidebar isOpen={isOpen} toggle={toggle} />
           <Navbar toggle={toggle} countCartItems={cartItems.length} />
           <Routes>
-            {/* <Route path="/" element={<Main />} /> */}
+            <Route path="/" element={<Main />} />
             <Route
               path="/menu"
               element={
