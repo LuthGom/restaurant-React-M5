@@ -1,0 +1,42 @@
+.signup{
+  grid-area: menu;
+}
+.section {
+  height: 100vh;
+  display: flex;
+  grid-area: menu;
+}
+.spans {
+  border: 4px inset black;
+  border-radius: 30px;
+  width: fit-content;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  background-color: black;
+  padding: 0.5em;
+}
+.forms {
+  height: 100%;
+  border: 2px inset black;
+  border-radius: 30px;
+  background-color: white;
+  padding: 3em;
+}
+.email{
+  margin: 1em;
+  padding: 1em;
+}
+.senha {
+  padding-bottom: 1em;
+}
+.divButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1em;
+}
+@media (min-width: 500px) {
+ 
+}

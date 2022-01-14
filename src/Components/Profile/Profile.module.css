@@ -1,0 +1,18 @@
+.profileContainer{
+    grid-area: menu;
+}
+.profileForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.spans{
+    padding: .5em;
+}
+.input{
+    border: none;
+}
+.profileButton{
+    display: flex;
+    flex-direction: column;
+}
