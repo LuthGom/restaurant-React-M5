@@ -3,7 +3,7 @@ import { HomeContainer } from "./../../assets/styles/globalStyles";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Sidebar from "./../Sidebar";
 import Navbar from "./../Navbar";
-import Main from "./Main";
+import Main from "./../Main/main";
 import HomeMenu from "./HomeMenu";
 import AboutUs from "./AboutUs";
 import Checkout from "./Checkout";
