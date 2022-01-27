@@ -1,4 +1,4 @@
-import Rotas from "./components/pages/Routes"
+import Rotas from "./teste/pages/Routes"
 
 import GlobalStyles from "./assets/styles/globalStyles";
 
