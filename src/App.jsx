@@ -5,7 +5,7 @@ import GlobalStyles from "./assets/styles/globalStyles";
 function App() {
   
   return (
-    <div className="App">0
+    <div className="App">
       <Rotas />
       <GlobalStyles />
     </div>
