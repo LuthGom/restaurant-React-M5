@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Text from "../Inputs/Text";
 import Radio from "../Inputs/Radio";
 import Paragrafo from "../Paragrafo";

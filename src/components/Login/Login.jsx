@@ -8,7 +8,6 @@ import { ButtonLink } from "../layout/Button/ButtonElements";
 import Loading from "../Loading";
 const Login = () => {
   const [login, setLogin] = useState({ email: "", senha: "" });
-  const [message, setMessage] = useState(false);
   const [loading, setLoading] = useState(null);
   const navigate = useNavigate();
 
@@ -22,7 +21,6 @@ const Login = () => {
     })
       .then((resp) => resp.json())
       .then((data) => {
-        console.log(data);
         localStorage.setItem("Cliente", JSON.stringify(data));
         setLoading(false);
         navigate("/checkout");
@@ -68,7 +66,6 @@ const Login = () => {
                 handleOnChange={handleChange}
               />
 
-              <h3>{message}</h3>
             </div>
             <div className={styles.divButton}>
               <Button type="primary" htmlType="submit" etiqueta="Login" />

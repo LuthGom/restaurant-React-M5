@@ -1,12 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
-import Loading from "../Loading/index";
 import CadastroForm from "../Cadastro/CadastroForm";
 import styles from "../Cadastro/CadastroForm/CadastroForm.module.css";
-function Cadastro() {
-  const [removeLoading, setRemoveLoading] = useState(false);
-  const navigate = useNavigate();
 
+function Cadastro() {
+  const navigate = useNavigate();
   function CreatePost(cadastro) {
     setTimeout(() => {
       fetch("https://restaurant-client-api.herokuapp.com/clientes", {
@@ -18,8 +16,7 @@ function Cadastro() {
       })
         .then((resp) => resp.json())
         .then((data) => {
-          console.log(data);
-          localStorage.setItem("cpf", data.requisicao.cpf)
+          localStorage.setItem("cpf", data.requisicao.cpf);
           navigate("/profile", { replace: true });
         })
         .catch((err) => console.log(err));
@@ -28,7 +25,6 @@ function Cadastro() {
 
   return (
     <div className={styles.container}>
-      {/* {!removeLoading && <Loading />} */}
       <h1>Formulário de Cadastro</h1>
       <CadastroForm handleSubmit={CreatePost} />
     </div>

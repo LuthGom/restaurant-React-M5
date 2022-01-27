@@ -16,7 +16,7 @@ function ProfileForm() {
       .then((resp) => resp.json())
       .then((data) => {
         console.log(data);
-       const filter = data.clientes.filter((cliente) => {
+        const filter = data.clientes.filter((cliente) => {
           return cliente.CPF === cpfCliente;
         });
         setUpdate({cpf: filter[0].CPF, nome: filter[0].NOME, telefone: filter[0].TELEFONE, cep: filter[0].CEP, endereco: filter[0].ENDERECO, cidade: filter[0].CIDADE, uf: filter[0].UF, email: filter[0].EMAIL, senha: filter[0].SENHA })
@@ -24,10 +24,10 @@ function ProfileForm() {
       })
       .catch((err) => console.log(err));
   };
+
   useEffect(() => {
     Get();
-
-  },[]);
+  });
 
   function onClick(e) {
     if (!e.target.disabled && !e.target.value === { disabled }) {

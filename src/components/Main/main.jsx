@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React from "react";
 import  "./main.css";
 import savings from '../../assets/images/logo.png';
 import Button from "../layout/Button";

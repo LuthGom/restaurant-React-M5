@@ -25,14 +25,10 @@ const Label = styled.label`
   font-size: 16px;
   line-height: 24px;
   /* identical to box height */
-
-
   color: #848484
 `;
 
-const Div = styled.div`
-  display: flex;
-`;
+
 
 function Radio({etiqueta, checked, name, value, onChange}) {
   return (
