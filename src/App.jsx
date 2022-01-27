@@ -1,4 +1,5 @@
 import Rotas from "./components/pages/Routes"
+
 import GlobalStyles from "./assets/styles/globalStyles";
 
 function App() {
