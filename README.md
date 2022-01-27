@@ -1,6 +1,19 @@
-# Getting Started with Create React App
+# Descrição do Projeto
+Esse projeto faz parte do Projeto Final do módulo 5 do curso de Dev. Web FullStack da [Resilia](https://www.resilia.com.br/).
+A aplicação desenvolvida em ReactJs e NodeJs foi construída para o delivery do Restaurante.
+<br><br>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Status do Projeto
+![Bagde](https://img.shields.io/badge/Status%20do%20Projeo-Concluído-red)
+<br><br>
+
+## Login válido para teste
+E-mail: cliente@teste.com.br | Senha: Reccahj@
+<br><br>
+
+## Link para o Banco de Dados
+Consulte essa documentação <a href="https://github.com/LuthGom/restaurante-cliente-API/blob/main/README.md%22%3ERestaurante"> Rest Api</a> na sessão "Para cadastrar novo cliente no banco de dados"
+<br><br>
 
 ## Available Scripts
 
