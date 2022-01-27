@@ -1,11 +1,11 @@
-import Routes from "./Components/pages/Routes"
+import Rotas from "./components/pages/Routes"
 import GlobalStyles from "./assets/styles/globalStyles";
 
 function App() {
   
   return (
     <div className="App">
-      <Routes />
+      <Rotas />
       <GlobalStyles />
     </div>
   );
