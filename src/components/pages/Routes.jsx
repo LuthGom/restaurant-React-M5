@@ -12,7 +12,7 @@ import Footer from "./../Footer";
 import Entrega from "../Entrega";
 import Register from "./Register";
 import Profile from "./Profile"
-const Rotas = () => {
+const Routes = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [cartItems, setCartItems] = useState([]);
   const toggle = () => {
@@ -46,4 +46,4 @@ const Rotas = () => {
   );
 };
 
-export default Rotas;
+export default Routes;
